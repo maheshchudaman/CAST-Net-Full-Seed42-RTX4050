@@ -1,0 +1,47 @@
+{
+  "amp_enabled": true,
+  "best_checkpoint_sha256": "723b61c509365473407acb591e564491dd1979a4805a37e1c99824ef10f274f2",
+  "best_epoch": 43,
+  "best_validation_psnr_hole": 19.911751451261086,
+  "checkpoint_every_steps": 100,
+  "checkpoint_selection": "maximum validation hole PSNR",
+  "effective_batch_size": 16,
+  "environment": {
+    "cuda": "13.0",
+    "cuda_visible_devices": null,
+    "cudnn": 92000,
+    "deterministic_algorithms": true,
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "packages": {
+      "Pillow": "12.2.0",
+      "PyYAML": "6.0.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+cu130",
+      "torch-fidelity": "0.3.0",
+      "torchmetrics": "1.9.0",
+      "torchvision": "0.28.0+cu130"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130"
+  },
+  "git_commit": "unavailable",
+  "gradient_accumulation_steps": 4,
+  "latest_checkpoint_sha256": "57414decfb61ee97f25da253f0dbdb18be67e16f3c5f44d7114c2ea037bbb2b6",
+  "manifest_sha256": {
+    "train": "e443646fca9869607069312b549a3d2c5b15a3f09c2c5d9fb6e73ddc4234840c",
+    "validation": "2ba68321cb3a8cd48d9f8399f7c265f80c30c480ddfd033c13d57079a8bf986d",
+    "validation_masks": "9f52776c4e43913321482ac6e3d635fa3c8e3c0f6f3a88e583bd7a88e4dd485e"
+  },
+  "metrics_log_sha256": "20664784ca2b545ed7428a8591de43d2fc197fe0f12fb534e46beef7a27bfee3",
+  "micro_batch_size": 4,
+  "resolved_config_sha256": "879853af47cd99f1f5adabd08b32a07018ea5dd590651d9542630082808c23cd",
+  "resumed_from": "C:\\CAST-Net-transfer\\CAST-Net\\runs\\ade20k_rtx4050_seed42\\latest.pt",
+  "resumed_from_step": 88800,
+  "seed": 42,
+  "source_config": "C:\\CAST-Net-transfer\\CAST-Net\\configs\\ade20k_rtx4050.yaml",
+  "status": "complete",
+  "steps": 101100,
+  "training_device": "cuda"
+}
+
