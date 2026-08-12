@@ -1,0 +1,63 @@
+{
+  "checkpoint_sha256": "723b61c509365473407acb591e564491dd1979a4805a37e1c99824ef10f274f2",
+  "config_sha256": "879853af47cd99f1f5adabd08b32a07018ea5dd590651d9542630082808c23cd",
+  "count": 2021,
+  "dataset": "ade20k",
+  "environment": {
+    "cuda": "13.0",
+    "cuda_visible_devices": null,
+    "cudnn": 92000,
+    "deterministic_algorithms": true,
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "packages": {
+      "Pillow": "12.2.0",
+      "PyYAML": "6.0.3",
+      "numpy": "2.4.4",
+      "torch": "2.13.0+cu130",
+      "torch-fidelity": "0.3.0",
+      "torchmetrics": "1.9.0",
+      "torchvision": "0.28.0+cu130"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130"
+  },
+  "fid_full": 10.465822219848633,
+  "git_commit": "unavailable",
+  "manifest_sha256": "7959e8734ae69ba5b242fc7d7d004afd5d1f853ba438a9ff22b89b18fa3eae09",
+  "mask_manifest_sha256": "2e0b23da7ae14c2e4fcd5866dc6bda05e60abc7d6e15d0621ff0ae10f63ebd82",
+  "method": "CAST-Net-full",
+  "metrics": {
+    "edge_mae_hole": {
+      "count": 2021,
+      "maximum": 1.4194837808609009,
+      "mean": 0.39565387591977685,
+      "minimum": 0.050681911408901215,
+      "std": 0.16426029617688986
+    },
+    "lpips_full": {
+      "count": 2021,
+      "maximum": 0.23700931668281555,
+      "mean": 0.06962418515384493,
+      "minimum": 0.007550441659986973,
+      "std": 0.03382460655528421
+    },
+    "psnr_hole": {
+      "count": 2021,
+      "maximum": 33.6702995300293,
+      "mean": 19.87317305304873,
+      "minimum": 9.724525451660156,
+      "std": 3.3306403468633716
+    },
+    "ssim_full": {
+      "count": 2021,
+      "maximum": 0.9879917502403259,
+      "mean": 0.8999287739418215,
+      "minimum": 0.6679352521896362,
+      "std": 0.05023487295638007
+    }
+  },
+  "run_id": "ade20k_rtx4050_seed42",
+  "saved_images": "C:\\CAST-Net-transfer\\CAST-Net\\results\\ade20k_rtx4050_seed42_test_images",
+  "seed": 42
+}
