@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "CAST-Net: Context-Aware Sparse-Transformer GAN for Image Inpainting"
+message: "Cite the paper and the exact archived software release used for experiments."
+type: software
+authors:
+  - family-names: Patil
+    given-names: Mahesh
+  - family-names: Tiwari
+    given-names: Vikas
+version: 0.1.0
+date-released: 2026-07-13
+license: MIT

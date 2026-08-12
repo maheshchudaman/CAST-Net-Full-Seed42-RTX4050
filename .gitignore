@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.torch-cache/
+data/
+masks/
+manifests/
+runs/
+checkpoints/
+*.pt
+*.pth
+*_images/
+._*
+.DS_Store
