@@ -1,0 +1,47 @@
+dataset: ade20k
+seed: 42
+experiment: ade20k_rtx4050_seed42
+data:
+  source_manifest: manifests/ade20k_source_training.jsonl
+  split_protocol: "deterministic 80/10/10 split of ADEChallengeData2016 images/training"
+  split_seed: 2026
+  train_root: data/ade20k/extracted/ADEChallengeData2016/images/training
+  validation_root: data/ade20k/extracted/ADEChallengeData2016/images/training
+  test_root: data/ade20k/extracted/ADEChallengeData2016/images/training
+  train_manifest: manifests/ade20k_train.jsonl
+  validation_manifest: manifests/ade20k_validation.jsonl
+  test_manifest: manifests/ade20k_test.jsonl
+  validation_mask_manifest: masks/ade20k_validation/registry.jsonl
+  test_mask_manifest: masks/ade20k_test/registry.jsonl
+  image_size: 256
+  validity_mask_semantics: "1=observed, 0=missing"
+  mask_seed: 2026
+  verify_image_hashes: true
+model:
+  base_channels: 64
+  attention_heads: 4
+  retain_ratio: 0.10
+  csam_temperature: 0.07
+  residual_scale: 0.25
+training:
+  epochs: 100
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  amp: true
+  checkpoint_every_steps: 100
+  optimizer: Adam
+  learning_rate: 0.0002
+  beta1: 0.5
+  beta2: 0.999
+  lambda_frequency: 0.10
+  lambda_edge: 0.10
+  lambda_adversarial: 0.10
+  num_workers: 0
+evaluation:
+  primary_region: hole
+  metrics: [PSNR, SSIM, LPIPS, FID, edge_MAE]
+  warmup_passes: 50
+  timing_passes: 500
+  ssim_implementation: torchmetrics-1.9.0
+  fid_implementation: torchmetrics-1.9.0-torch-fidelity-0.3.0
+
